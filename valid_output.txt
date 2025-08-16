@@ -1,0 +1,5 @@
+Sensitive data found in sample.conf:
+- Line 1: Email (john.doe@example.com)
+- Line 1: Email (alice.smith@company.org)
+- Line 1: SSN (123-45-6789)
+Audit logged to audit.log

@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build ConfigSafe Auditor",
+      "type": "shell",
+      "command": "C:/msys64/ucrt64/bin/g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "-std=c++17",
+        "main.cpp",
+        "utils.cpp",
+        "logger.cpp",
+        "-o",
+        "configsafe_auditor.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Builds the ConfigSafe Auditor tool using g++ on Windows (MSYS2)"
+    }
+  ]
+}

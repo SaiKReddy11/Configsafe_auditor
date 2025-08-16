@@ -1,0 +1,2 @@
+2025-07-30 23:24:15 | File: sample.conf | Findings: Line 1: Email (john.doe@example.com), Line 1: Email (alice.smith@company.org), Line 1: SSN (123-45-6789)
+2025-07-30 23:27:11 | File: sample.conf | Findings: Line 1: Email (john.doe@example.com), Line 1: Email (alice.smith@company.org), Line 1: SSN (123-45-6789)
