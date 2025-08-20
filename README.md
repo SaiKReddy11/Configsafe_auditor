@@ -1,15 +1,30 @@
-ConfigSafe PII Audit Tool
-Overview
+## ConfigSafe PII Audit Tool
+
+## Overview
 ConfigSafe PII Audit Tool is a C++ command-line application that scans configuration files for personally identifiable information (PII) like emails and SSNs, ensuring compliance with GDPR and HIPAA. It outputs findings and logs them to audit.log for regulatory auditing, ideal for a government agency demo.
-Features Implemented
 
-Command-line argument parsing (-f <filename>).
-File I/O (read config file, write audit log).
-String parsing with regex (detect emails, SSNs).
-Error handling (try/catch for file/input errors).
-Modular design (separate main.cpp, utils.cpp, logger.cpp).
+## Project Highlights
 
-Dependencies
+- Detects emails, SSNs, and other sensitive data using regex.
+- ogs findings for regulatory auditing.
+- Modular design: separates parsing, logging, and main logic.
+- Demonstrates CLI development, error handling, and compliance-focused software.
+
+## Skills Demonstrated
+
+- C++17 programming & modular project structure
+- Regex parsing and file I/O
+- CLI tool development and logging
+- Compliance-focused software design
+
+## Features Implemented
+- Command-line argument parsing (-f <filename>).
+- File I/O (read config file, write audit log).
+- String parsing with regex (detect emails, SSNs).
+- Error handling (try/catch for file/input errors).
+- Modular design (separate main.cpp, utils.cpp, logger.cpp).
+
+## Dependencies
 
 g++ compiler with C++17 support.
 
@@ -27,11 +42,11 @@ Run:
 ./configsafe_auditor -f <filename>
 
 
-Example Usage
+## Example Usage
 Valid Input
 ./configsafe_auditor.exe -f sample.conf
 
-Output:
+## Output:
 Sensitive data found in sample.conf:
 - Line 2: Email (john.doe@example.com)
 - Line 3: SSN (123-45-6789)
@@ -47,14 +62,10 @@ Invalid Input
 Output:
 Error: Unable to open file: nonexistent.conf
 
-Files
+## Files
 
 main.cpp: Argument parsing and main logic.
 utils.h/cpp: PII detection with regex.
 logger.h/cpp: Audit logging.
 .vscode/tasks.json: VS Code build task.
 sample.conf: Test configuration file.
-
-Author
-Sai Kumar Reddy Sama
-A00288903
